@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    width: 100vw;
+    background-color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header:nth-child(1) {
+    padding: 20px 30px;
+    margin: 20px 10px;
+}
+
+header .logo {
+    width: 300px;
+    height: 80px;
+    background-color: bisque;
+    margin: 0px 30px;
+    border: 1px dotted blanchedalmond inset;
+    border-radius: 35px;
+}
+
+.logo h2 {
+    margin: 25px 70px;
+}
+
+.navbar nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 25px 30px;
+}
+
+/*  
+===============================
+home/index css
+=============================== 
+*/
+
+.main-cont {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.main-cont div h1 hr {
+    margin: 20px auto;
+    width: 400px;
+    height: 5px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-cont h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px 0;
+}
+
+.main-cont p {
+    font-size: 1.5rem;
+}
+
+
+.blogs {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.blogs .blog {
+    padding: 50px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .05), -1px -1px 2px rgba(0, 0, 0, .05);
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, .05), -3px -3px 5px rgba(200, 200, 200, .2); */
+    border-radius: 20px;
+}
+
+.blogs .blog div {
+    padding: 10px 0;
+}
+
+.blogs .blog .blog-thumbnail {
+    width: 960px;
+    height: 540px;
+    /* background-color: beige; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-thumbnail>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.blogs h2 img,
+.blog-title img {
+    margin: 0 5px;
+    width: 20px;
+}
+
+
+/*  
+===============================
+login css
+=============================== 
+*/
+
+.form-area {
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-area form {
+    padding: 50px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border: none;
+    border-radius: 25px;
+}
+
+.form-area form h2 {
+    padding: 20px 0;
+}
+
+.form-area .error-message {
+    color: rebeccapurple;
+}
+
+.form-area form>input {
+    padding: 15px 25px;
+    background-color: azure;
+    border: none;
+    border-radius: 25px;
+}
+
+.form-area form input {
+    margin: 10px 0;
+}
+
+.form-area form textarea {
+    padding: 15px 25px;
+    width: 70%;
+    height: 130px;
+    border: none;
+    border-radius: 25px;
+    resize: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: azure;
+}
+
+.form-area form input[type="text"],
+.form-area form input[type="password"],
+.form-area form input[type="file"] {
+    width: 70%
+}
+
+
+.form-area input[type="file"]::-webkit-file-upload-button {
+    display: none;
+}
+
+.form-area input[type="submit"] {
+    margin-top: 20px;
+    padding: 15px 25px;
+    background-color: beige;
+    border: none;
+    border-radius: 35px;
+}
+
+.form-area input[type="submit"]:hover,
+.form-area input[type="submit"]:focus {
+    margin-top: 20px;
+    padding: 15px 25px;
+    color: darkblue;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 25px;
+}
